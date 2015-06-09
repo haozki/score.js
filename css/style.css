@@ -1,0 +1,136 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #FFF;
+}
+
+hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #FFF;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    padding: 0px 0px 0px 10px;
+    border-left: 5px solid #8BCC00;
+}
+
+header .logo {
+    height: 140px;
+}
+
+header .logo h1 {
+    color: #3B3B3B;
+    color: #00B5E5;
+    font-size: 3.5em;
+    font-weight:bold;
+    letter-spacing: -2px;
+    line-height: 1em;
+    text-shadow: 2px 2px #EEE;
+}
+
+header .logo p {
+    color: #999;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.divider {
+    height: 1px;
+    margin: 9px 1px;
+    overflow: hidden;
+    background-color: #E5E5E5;
+    border-bottom: 1px solid #FFF;
+    width: 500px;
+}
+
+.divider-vertical {
+    position: absolute;
+    left: 512px;
+    top: 0px;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: none repeat scroll 0% 0% #E7E7E7;
+}
+
+.example {
+    position: relative;
+    margin: 15px 0;
+    padding: 39px 19px 14px;
+    *padding-top: 19px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.example:after {
+    content: "Example";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
+    -webkit-border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    border-radius: 4px 0 4px 0;
+}
+
+#container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.part {
+    margin-bottom: 30px;
+}
+
+.live-part > div {
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-bottom: #F5F2F0 1px solid;
+    height: 26px;
+}
+
+.live-part > div span {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.live-part > div button {
+    vertical-align: middle;
+    height: 26px;
+    float: right;
+}
+
+.live-part  input {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    color: #333333;
+    display: inline-block;
+    font-size: 1em;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 135px;
+}

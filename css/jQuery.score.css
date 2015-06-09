@@ -1,0 +1,89 @@
+/* Note:
+    ★的Unicode编码是:\2605，☆的Unicode编码是:\2606.
+    Unicode 在 6.0 已经添加了一组 pentagram（U+26E4 至 26E7）,
+    查询见：http://www.unicode.org/charts/PDF/U2600.pdf .
+*/
+
+.scorejs {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 26px;
+    color: #000;
+}
+
+.scorejs > .score-item,
+.scorejs > .score-item-static {
+    font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block; /* 理论上inline也是可行的，但是inline无法设置宽度，并且在Firefox中使用FontAwesome的图标字符时会使direction: rtl;失效 */ 
+}
+
+.scorejs.score-vertical > .score-item,
+.scorejs.score-vertical > .score-item-static {
+    display: list-item;
+}
+
+.scorejs > .score-item:hover {
+    cursor: pointer;
+}
+
+.scorejs > .score-item-static:hover {
+    cursor: default;
+}
+
+.scorejs > .score-item:before {
+    content: "\2606"; /* ☆ */
+    _content: "\2740";
+    padding: 2px;
+}
+
+.scorejs > .score-item-static:before {
+    content: "\2606"; /* ☆ */
+    _content: "\2740";
+    padding: 2px;
+}
+
+.scorejs > .score-item:hover:before,
+.scorejs > .score-item:hover ~ .score-item:before {
+    content: "\2605"; /* ★ */
+    _content: "\273f";
+}
+
+.scorejs > .score-item.active:before,
+.scorejs > .score-item.active ~ .score-item:before {
+    content: "\2605"; /* ★ */
+    _content: "\273f";
+}
+
+.scorejs > .score-item-static.active:before {
+    content: "\2605"; /* ★ */
+    _content: "\273f";
+}
+
+/* 使用FontAwesome */
+.scorejs.fontawesome > .score-item:before {
+    content: "\f006";
+}
+
+.scorejs.fontawesome > .score-item-static:before {
+    content: "\f006";
+}
+
+.scorejs.fontawesome > .score-item:hover:before,
+.scorejs.fontawesome > .score-item:hover ~ .score-item:before {
+    content: "\f005";
+}
+
+.scorejs.fontawesome > .score-item.active:before,
+.scorejs.fontawesome > .score-item.active ~ .score-item:before {
+    content: "\f005";
+}
+
+.scorejs.fontawesome > .score-item-static.active:before {
+    content: "\f005";
+}
