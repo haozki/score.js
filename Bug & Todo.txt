@@ -1,5 +1,0 @@
-To Do Suggestion:
-
-√ 初始化时应该保存一些元被已经被设置的属性，如style、data等
-* 设计自定义模式
-√ 考虑在hover过程中off了mouseout事件后鼠标再离开能否恢复之前的分数
